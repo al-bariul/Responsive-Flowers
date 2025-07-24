@@ -1,0 +1,62 @@
+/* google fonts */
+/* primary fonts */
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* secondary fonts */
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --font-title-size: 3.125rem;
+  --normal-text-size: 1.375rem;
+  --primary-font-color: rgba(0, 0, 0, 0.5);
+  --secondary-font-color: rgba(0, 0, 0, 1);
+  --tertiary-font-color: rgba(233, 90, 8, 1);
+  --primary-font-family: "Inter", sans-serif;
+  --secondary-font-family: "Noto Serif", serif;
+  --primary-font-weight: normal;
+  --secondary-font-weight: bold;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* justify-content: space-evenly; */
+  /* width: 1140px; */
+  /* background-color: red; */
+  /* width: 1140px; */
+  margin: 30px 150px 0 150px;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav ul li {
+  list-style: none;
+}
+
+.active {
+  color: var(--secondary-font-color);
+}
+
+nav ul li a {
+  text-decoration: none;
+  padding-right: 48px;
+  color: var(--primary-font-color);
+}
+
+nav ul button {
+  background-color: transparent;
+  border: none;
+}
+
+nav ul button i {
+  margin-right: 10px;
+}
