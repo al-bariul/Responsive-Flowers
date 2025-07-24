@@ -13,7 +13,7 @@
 
 :root {
   --font-title-size: 3.125rem;
-  --normal-text-size: 1.375rem;
+  --normal-text-size: 1.03rem;
   --primary-font-color: rgba(0, 0, 0, 0.5);
   --secondary-font-color: rgba(0, 0, 0, 1);
   --tertiary-font-color: rgba(233, 90, 8, 1);
@@ -31,7 +31,11 @@ nav {
   /* width: 1140px; */
   /* background-color: red; */
   /* width: 1140px; */
-  margin: 30px 150px 0 150px;
+  margin: 15px 150px 0 150px;
+}
+
+nav .logo img {
+  width: 100px;
 }
 
 nav ul {
@@ -59,4 +63,32 @@ nav ul button {
 
 nav ul button i {
   margin-right: 10px;
+}
+
+.home-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  padding: 0 150px;
+  max-width: 1140px;
+  margin-top: 120px;
+}
+
+.home-content h1 {
+  font-size: 2.9rem;
+  font-family: var(--secondary-font-family);
+  font-weight: var(--secondary-font-weight);
+}
+
+.home-content p {
+  font-size: var(--normal-text-size);
+  color: var(--primary-font-color);
+}
+
+.home-content span {
+  color: var(--tertiary-font-color);
+}
+
+.home-content .image img {
+  width: 100%;
 }
