@@ -12,7 +12,7 @@
 }
 
 :root {
-  --font-title-size: 3.125rem;
+  --font-title-size: 2.5rem;
   --normal-text-size: 1.03rem;
   --primary-font-color: rgba(0, 0, 0, 0.5);
   --secondary-font-color: rgba(0, 0, 0, 1);
@@ -21,6 +21,35 @@
   --secondary-font-family: "Noto Serif", serif;
   --primary-font-weight: normal;
   --secondary-font-weight: bold;
+}
+
+.second-title {
+  font-size: var(--font-title-size);
+  font-weight: var(--secondary-font-weight);
+  font-family: var(--secondary-font-family);
+}
+
+.span-color {
+  color: var(--tertiary-font-color);
+}
+
+.paragraph {
+  font-size: var(--normal-text-size);
+  color: var(--primary-font-color);
+}
+
+.btn {
+  background-color: var(--tertiary-font-color);
+  color: white;
+  font-size: 0.8rem;
+  font-family: var(--primary-font-family);
+  font-weight: var(--primary-font-weight);
+  padding: 10px 25px;
+  border: none;
+}
+
+body img {
+  width: 100%;
 }
 
 nav {
@@ -91,4 +120,34 @@ nav ul button i {
 
 .home-content .image img {
   width: 100%;
+}
+
+.plants {
+  text-align: center;
+  margin-top: 120px;
+  max-width: 1140px;
+  padding: 0 150px;
+}
+
+.plants-card {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+}
+
+.plants h2,
+.plants p,
+.plants .plants-card {
+  margin-bottom: 20px;
+}
+
+.plants h2 {
+  font-weight: var(--primary-font-weight);
+  font-size: var(--normal-text-size);
+  font-family: var(--primary-font-family);
+  font-weight: var(--primary-font-weight);
+}
+
+.plants p {
+  font-weight: var(--secondary-font-weight);
 }
