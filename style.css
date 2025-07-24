@@ -151,3 +151,24 @@ nav ul button i {
 .plants p {
   font-weight: var(--secondary-font-weight);
 }
+
+.flower-plants-lover {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 0 150px;
+  max-width: 1140px;
+  margin-top: 120px;
+  gap: 80px;
+  background-color: red;
+}
+
+.flower-plants-lover .img {
+  position: relative;
+}
+
+.flower-plants-lover .img .second-img {
+  position: absolute;
+  top: -90px;
+  right: -85px;
+  width: 200px;
+}
