@@ -23,6 +23,7 @@
   --secondary-font-weight: bold;
 }
 
+/* common style */
 .second-title {
   font-size: var(--font-title-size);
   font-weight: var(--secondary-font-weight);
@@ -56,14 +57,16 @@ body img {
   width: 100%;
 }
 
+header {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+/* <!-- Navigation Bar Start --> */
 nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  /* justify-content: space-evenly; */
-  /* width: 1140px; */
-  /* background-color: red; */
-  /* max-width: 1140px; */
   margin: 15px 150px 0 150px;
 }
 
@@ -97,13 +100,15 @@ nav ul button {
 nav ul button i {
   margin-right: 10px;
 }
+/* <!-- Navigation Bar End --> */
 
+/* <!-- Home Section Start --> */
 .home-content {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
   padding: 0 150px;
-  /* max-width: 1140px; */
+  margin: 0 auto;
   margin-top: 120px;
 }
 
@@ -126,11 +131,15 @@ nav ul button i {
   width: 100%;
 }
 
+/* <!-- Home Section End --> */
+
+/* <!-- Plants Section Start -- >  */
 .plants {
   text-align: center;
+  margin: 0 auto;
   margin-top: 120px;
-  /* max-width: 1140px; */
   padding: 0 150px;
+  max-width: 1440px;
 }
 
 .plants-card {
@@ -145,26 +154,21 @@ nav ul button i {
   margin-bottom: 20px;
 }
 
-.plants h2 {
-  /* font-weight: var(--primary-font-weight);
-  font-size: var(--normal-text-size);
-  font-family: var(--primary-font-family);
-  font-weight: var(--primary-font-weight); */
-}
-
 .plants p {
   font-weight: var(--secondary-font-weight);
 }
 
+/* <!-- Plants Section End --> */
+
+/* <!-- Flower Plant Lover Start --> */
 .flower-plants-lover {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  /* grid-template-columns: auto auto; */
+  margin: 0 auto;
   padding: 0 150px;
-  /* max-width: 1140px; */
   margin-top: 200px;
   gap: 80px;
-  /* background-color: red; */
+  max-width: 1440px;
 }
 
 .flower-plants-lover h2 {
@@ -189,9 +193,11 @@ nav ul button i {
   right: -85px;
   width: 200px;
 }
+/* <!-- Flower Plant Lover End --> */
 
+/* <!-- Latest Deals Start --> */
 .latest-deals {
-  max-width: 1140px;
+  max-width: 1240px;
   margin: 100px auto;
   padding: 0 50px;
   text-align: center;
@@ -209,13 +215,11 @@ nav ul button i {
   margin-top: 50px;
 }
 
-/* Grid left column — 2 stacked boxes */
 .left {
   display: grid;
   row-gap: 10px;
 }
 
-/* Common image box */
 .deal-box {
   position: relative;
   overflow: hidden;
@@ -229,7 +233,6 @@ nav ul button i {
   border-radius: 10px;
 }
 
-/* Overlay dark background */
 .deal-box::before {
   content: "";
   position: absolute;
@@ -238,7 +241,6 @@ nav ul button i {
   border-radius: 10px;
 }
 
-/* Overlay text */
 .deal-box .text {
   position: absolute;
   top: 50%;
@@ -266,3 +268,4 @@ nav ul button i {
   margin-top: 5px;
   color: white;
 }
+/* <!-- Latest Deals End --> */
