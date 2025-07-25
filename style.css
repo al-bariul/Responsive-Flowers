@@ -36,6 +36,10 @@
 .paragraph {
   font-size: var(--normal-text-size);
   color: var(--primary-font-color);
+  font-weight: var(--primary-font-weight);
+  width: 750px;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .btn {
@@ -59,7 +63,7 @@ nav {
   /* justify-content: space-evenly; */
   /* width: 1140px; */
   /* background-color: red; */
-  /* width: 1140px; */
+  /* max-width: 1140px; */
   margin: 15px 150px 0 150px;
 }
 
@@ -99,7 +103,7 @@ nav ul button i {
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
   padding: 0 150px;
-  max-width: 1140px;
+  /* max-width: 1140px; */
   margin-top: 120px;
 }
 
@@ -125,7 +129,7 @@ nav ul button i {
 .plants {
   text-align: center;
   margin-top: 120px;
-  max-width: 1140px;
+  /* max-width: 1140px; */
   padding: 0 150px;
 }
 
@@ -142,10 +146,10 @@ nav ul button i {
 }
 
 .plants h2 {
-  font-weight: var(--primary-font-weight);
+  /* font-weight: var(--primary-font-weight);
   font-size: var(--normal-text-size);
   font-family: var(--primary-font-family);
-  font-weight: var(--primary-font-weight);
+  font-weight: var(--primary-font-weight); */
 }
 
 .plants p {
@@ -155,11 +159,24 @@ nav ul button i {
 .flower-plants-lover {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  /* grid-template-columns: auto auto; */
   padding: 0 150px;
-  max-width: 1140px;
-  margin-top: 120px;
+  /* max-width: 1140px; */
+  margin-top: 200px;
   gap: 80px;
-  background-color: red;
+  /* background-color: red; */
+}
+
+.flower-plants-lover h2 {
+  margin-top: 60px;
+  margin-bottom: 30px;
+}
+
+.flower-plants-lover li {
+  color: var(--primary-font-color);
+  font-family: var(--primary-font-family);
+  font-size: var(--normal-text-size);
+  margin-bottom: 20px;
 }
 
 .flower-plants-lover .img {
@@ -171,4 +188,81 @@ nav ul button i {
   top: -90px;
   right: -85px;
   width: 200px;
+}
+
+.latest-deals {
+  max-width: 1140px;
+  margin: 100px auto;
+  padding: 0 50px;
+  text-align: center;
+}
+
+.latest-deals h2,
+.latest-deals p {
+  margin-bottom: 20px;
+}
+
+.img-txt {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 20px;
+  margin-top: 50px;
+}
+
+/* Grid left column — 2 stacked boxes */
+.left {
+  display: grid;
+  row-gap: 10px;
+}
+
+/* Common image box */
+.deal-box {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.deal-box img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10px;
+}
+
+/* Overlay dark background */
+.deal-box::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+}
+
+/* Overlay text */
+.deal-box .text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  z-index: 2;
+}
+
+.deal-box .text-2 {
+  margin-bottom: 10px;
+}
+
+.deal-box .off {
+  padding-right: 10px;
+  border-right: 1px solid white;
+}
+
+.deal-box .bloom {
+  padding-left: 10px;
+}
+
+.deal-box a {
+  margin-top: 5px;
+  color: white;
 }
