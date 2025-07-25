@@ -308,7 +308,7 @@ footer {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   align-items: center;
-  width: 1240px;
+  max-width: 1240px;
   margin: 100px auto;
   padding: 0 50px;
 }
@@ -415,6 +415,52 @@ footer .icon img {
 
   .plants-card .card .btn {
     padding: 5px 10px;
+  }
+
+  .flower-plants-lover {
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    padding: 0 30px;
+  }
+
+  .flower-plants-lover h2 {
+    margin-top: 0;
+  }
+
+  .flower-plants-lover ul {
+    padding: 0 20px;
+  }
+
+  .flower-plants-lover .img .second-img {
+    display: none;
+  }
+
+  .latest-deals p {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .img-txt {
+    grid-template-columns: 1fr;
+  }
+
+  .colorful-bunch input {
+    width: 60%;
+    margin: 0 auto;
+  }
+
+  footer {
+    grid-template-columns: 1fr;
+    margin: 55px auto;
+  }
+
+  footer .icon {
+    margin-top: 0;
+  }
+
+  footer p {
+    margin-bottom: 30px;
   }
 }
 
