@@ -74,7 +74,11 @@ nav .logo img {
   width: 100px;
 }
 
-nav ul {
+nav .right-part {
+  display: flex;
+}
+
+nav .right-part ul {
   display: flex;
 }
 
@@ -362,6 +366,10 @@ footer .icon img {
   }
 
   nav ul {
+    display: none;
+  }
+
+  nav ul li {
     display: none;
   }
 
